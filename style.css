@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#game {
+    background-color: bisque;
+    margin: 20px 15% 0 15%;
+}
+
+#cards {
+    margin: 0 15% 0 15%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px 3px;
+    justify-items: center;
+}
+
+.card {
+    text-align: center;
+    height: 220px;
+    width: 150px;
+    background-color: bisque;
+    perspective: 1000px;
+}
+
+.active .inner {
+    transform: rotateY(180deg);
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.back, .front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid blue;
+}
+
+.front {
+    font-size: 30px;
+    background-color: aliceblue;
+    color: gray;}
+
+.back {
+    transform: rotateY(180deg);
+    width: 150px;
+    height: 220px;
+}
+
+.back > img {
+    width: 100%;
+    height: 100%;
+}
+
+#time {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+}
+
+#start {
+    text-align: center;
+    font-size: 38px;
+    padding: 25px 0 25px 0;
+}

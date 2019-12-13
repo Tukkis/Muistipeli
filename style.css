@@ -30,6 +30,10 @@
     transform: rotateY(180deg);
 }
 
+.disabled .inner {
+    transform: rotateY(180deg);
+}
+
 .inner {
     position: relative;
     width: 100%;

@@ -34,6 +34,10 @@
     transform: rotateY(180deg);
 }
 
+.disabled .back, .disabled .front{
+    border: 1px solid red;
+}
+
 .inner {
     position: relative;
     width: 100%;
@@ -74,8 +78,13 @@
     padding-top: 25px;
 }
 
-#start {
+#buttonwrap {
+    text-align: center;
+    padding: 25px 0 25px 0;
+}
+
+#start {    
     text-align: center;
     font-size: 38px;
-    padding: 25px 0 25px 0;
+    padding: 10px 10px 10px 10px;
 }

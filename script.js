@@ -67,13 +67,13 @@ function setCards(arr){
                     activeArr = [];
                     score++;
                 } else if (activeArr.length === 2){
-                    setTimeout(() => {clickDisabled=true}, 401)
+                    setTimeout(() => {clickDisabled=true}, 401);
                     setTimeout(() => {
                         actives.forEach(active => active.classList.remove('active'));
                         actives = [];
                         activeArr = [];
                     }, 1000);
-                    setTimeout(() => {clickDisabled=false}, 1400)
+                    setTimeout(() => {clickDisabled=false}, 1400);
                 }
 
                 if(score === 6){
@@ -91,5 +91,5 @@ function setCards(arr){
     }
 }
 
-setCards([0,0,0,0,0,0,0,0,0,0,0,0]);
+setCards(["bäk.png","bäk.png","bäk.png","bäk.png","bäk.png","bäk.png","bäk.png","bäk.png","bäk.png","bäk.png","bäk.png","bäk.png"]);
 endGame(0);
